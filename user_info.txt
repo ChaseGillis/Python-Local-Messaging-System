@@ -1,0 +1,10 @@
+pikachu,Abc123
+charmander,Xyz123
+squirtle,SquirtleSquad99
+Pidgey2020,Pqr123
+fearow,Pidgey2020
+foobar,abcABC123
+barfoo,xyz123ABC
+chaseg,test123
+chaseg138,Pokemon534
+snorlax,Apple123
