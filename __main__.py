@@ -1,8 +1,3 @@
-"""
-Chase Gillis  4/13/23	CSCI-UA 2 - 006
-Assignment #9 Part #1
-Email Service
-"""
 import datetime
 d = datetime.datetime.now()
 month = d.month
@@ -162,38 +157,13 @@ def add_user(username, password):
 # TESTER CODE
 add_user('foobar', 'abcABC123')
 add_user('barfoo', 'xyz123ABC')
-add_user('foobar', 'aTest123') # this should fail
-
-# OUTPUT - check 'user_info.txt' to ensure that that two new accounts have been created'''
+add_user('foobar', 'aTest123') # this should fail'''
 
 # function:   send_message
 # input:      a sender (string), a recipient (string) and a message (string)
 # processing: writes a new line into the specific messages file for the given users
 #             with the following information:
-#
 #             sender|date_and_time|message\n
-#
-#             for example, if you call this function using the following arguments:
-#
-#             send_message('craig', 'pikachu', 'Hello there! nice to see you!')
-#
-#             the file 'messages/pikachu.txt' should gain an additional line data
-#             that looks like the following:
-#
-#             craig|11/14/2020 12:30:05|Hello there! nice to see you!\n
-#
-#             note that you can generate the current time by doing the following:
-#
-#             import datetime
-#             d = datetime.datetime.now()
-#             month = d.month
-#             day = d.day
-#             year = d.year
-#             ... etc. for hour, minute and second
-#
-#             keep in mind that you may need to 'append' to the correct messages file
-#             since a user can receive an unlimited number of messages.  you may also
-#             need to create a new message file if one does not exist for a user.
 # output:     nothing
 def send_message(sender,recipient,message):
     file = open('messages/'+ recipient +'.txt', 'a')
@@ -209,20 +179,7 @@ send_message('pikachu', 'charmander', 'You too, ttyl')'''
 
 # function:   print_messages
 # input:      a username (string)
-# processing: prints all messages sent to the username in question.  assume you have this file named 'pikachu.txt':
-#
-#             charmander|11/14/2020 13:37:15|Hey there!
-#             charmander|11/14/2020 13:37:15|You too, ttyl
-#
-#             this function should generate the following output:
-#
-#             Message #1 received from charmander
-#             Time: 11/14/2020 13:37:15
-#             Hey there!
-#
-#             Message #2 received from charmander
-#             Time: 11/14/2020 13:37:15
-#             You too, ttyl
+# processing: prints all messages sent to the username in question
 # output:     no return value (simply prints the messages)
 def print_messages(username):
     accumulator = 0
